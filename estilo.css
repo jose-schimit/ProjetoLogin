@@ -1,90 +1,20 @@
-:root{
-	--cor_texto:#aaa;
-	} 
 
-*{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 body{
-	min-width: 360px;
-	background-image: url('fundo-tecnologia.jpg');
+	background-color: red;
 }
-.container{
-	height: 100%;
+@media screen and (max-width: 768px){
+	body{
+		background-color: blue !important;
+	}
 }
-.divFrm{
-	width: 30%;
-	height: 400px;
-	border: 1px solid grey;
-	border-radius: 3.5px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	box-shadow: 0px 0px 12px 0px  dodgerblue;
-	background-color: white;
-	background-image: linear-gradient(to bottom, white,black,white,black);
-}
-.divFrm form{
-	width: 100%;
-	text-align: center;
-}
-.divFrm button{
-	width: 90%;
-	margin: 10px auto 20px auto;
-}
-.titulo{
-	width: 100%;
-	margin: 40px 25px 0px 0px;
-	text-align: center;
-	color:white;
-}
-#msgErro{
-	text-align: center;
-	margin-top: 10px;
-	opacity: 0%;
-}
-.titulo hr{
-	width: 90%;
-	margin: auto;
-}
-.campos{
-	width: 100%;
-	margin-top: 20px;
-	position: relative;
-}
-.campos input{
-	width: 90%;
-	height: 40px;
-	border-radius: 3px 0px 0px 3px;
-	border: 1px solid #ddd;
-	background-color: aliceblue;
-	position: relative;
-	outline: none;
-}
-input[type=text],[type=password]{
-	padding-left: 45px;
+@media screen and (max-width: 600px){
+	body{
+		background-color: green !important;
+	}
 }
 
-.campos input:focus{
-	border-color: dodgerblue;
-	box-shadow: 0px 0px 5px 0px dodgerblue;
-}
-.campos i{
-	width: 40px;
-	height: 40px;
-	font-size: 20pt;
-	position: absolute;
-	float: left;
-	z-index: 1;
-	padding: 7px;
-	background-color: #ddd;
-	border-radius: 3px 0px 0px 3px;
-	opacity: 80%;
-}
+
+
 
 
 

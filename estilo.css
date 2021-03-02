@@ -1,17 +1,86 @@
-
+ 
+ *{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+	width: 90%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 body{
-	background-color: red;
+	background-image: url('fundo-tecnologia.jpg');
+	min-width: 500px;
 }
-@media screen and (max-width: 768px){
-	body{
-		background-color: blue !important;
-	}
+.divFrm{
+	width: 35%;
+	height: 400px;
+	border: 1px solid grey;
+	border-radius: 3.5px;
+	background-color: white;
+	background-image: linear-gradient(to bottom, white,black,white,black);
+	text-align: center;
 }
-@media screen and (max-width: 600px){
-	body{
-		background-color: green !important;
-	}
+.frm{
+	position: relative;
 }
+.divFrm button{
+	width: 90%;
+	margin: 10px auto 20px auto;
+}
+.titulo{
+	width: 100%;
+	margin: 40px 25px 0px 0px;
+	text-align: center;
+	color:white;
+}
+#msgErro{
+	text-align: center;
+	margin-top: 10px;
+	opacity: 0%;
+}
+.campos{
+	width: 100%;
+	margin-top: 20px;
+	position: relative;
+}
+.campos input{
+	width: 90%;
+	height: 40px;
+	border-radius: 3px 0px 0px 3px;
+	border: 1px solid #ddd;
+	background-color: aliceblue;
+	position: relative;
+	outline: none;
+}
+input[type=text],[type=password]{
+	padding-left: 45px;
+}
+
+.campos input:focus{
+	border-color: dodgerblue;
+	box-shadow: 0px 0px 5px 0px dodgerblue;
+}
+.campos i{
+	width: 40px;
+	height: 40px;
+	font-size: 20pt;
+	position: absolute;
+	float: left;
+	z-index: 1;
+	padding: 7px;
+	background-color: #ddd;
+	border-radius: 3px 0px 0px 3px;
+	opacity: 80%;
+}
+
+ 
+
 
 
 
